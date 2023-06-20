@@ -46,28 +46,36 @@ body {
 /* TASK 1 */
 
 .task-1 .container {
+  display: flex;
 }
 
 /* TASK 2 */
 
 .task-2 .container {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* TASK 3 */
 
 .task-3 .container {
   display: flex;
+  justify-content: space-between;
 }
 
 /* TASK 4 */
 
 .task-4 .option-1 .container {
   display: flex;
+  justify-content: space-between;
 }
 
 .task-4 .option-2 .container {
   display: flex;
+}
+.task-4 .option-2 .container .space {
+  flex-grow: 1;
 }
 
 .task-4 .option-3 .container {
@@ -75,6 +83,7 @@ body {
 }
 
 .task-4 .option-3 .item:first-child {
+  flex-grow: 1;
 }
 
 /* TASK 5 */
@@ -83,7 +92,7 @@ body {
   display: flex;
 }
 
-.task-5 .item-1 {
+/* .task-5 .item-1 {
 }
 
 .task-5 .item-2 {
@@ -93,32 +102,49 @@ body {
 }
 
 .task-5 .item-4 {
+} */
+
+.task-5 .container .item{
+  flex-grow: 1;
 }
 
 /* TASK 6 */
 
-.task-6 .container {
+.task-6 .container{
   display: flex;
+  flex-wrap: wrap;
 }
 
 .task-6 .item {
+  /* width: 25%; */
+  flex-basis: 25%;
 }
 
-@media (min-width: 375px) {
+@media (max-width: 675px) {
   .task-6 .item {
+    /* width: 50%; */
+    flex-basis: 50%;
   }
 }
 
 /* TASK 7 */
 
 .task-7 .container {
+  display: flex;
+  /* Reverse order: */
+  flex-direction: row-reverse;
+  justify-content: flex-end;
 }
+
+/* One by one order:
 
 .task-7 .item-1 {
+  order: 1;
 }
 
-.task-7 .item-3 {
-}
+.task-7 .item-2 {
+  order: 2;
+} */
 
 /* TASK 8 */
 
@@ -127,4 +153,5 @@ body {
 }
 
 .task-8 .item-3 {
+  align-self: center;
 }
